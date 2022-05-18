@@ -1,0 +1,7 @@
+video_inputs:
+  ./inputs/facebook:
+    quality: 30
+    output: "./for-facebook"
+  ./inputs/backups:
+    quality: 20
+    output: "./for-backups"

@@ -8,3 +8,5 @@ website with file size limits on uploads)
 (You need HandBrake CLI in order to use this)
 
 And also python, if you are running the python script
+
+Example of config.yml on config.yml.dist (Create the inputs/output directory manually)
