@@ -1,0 +1,4 @@
+video_inputs:
+  ./inputs:
+    quality: 30
+    output: ./
