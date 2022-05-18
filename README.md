@@ -10,3 +10,5 @@ website with file size limits on uploads)
 And also python, if you are running the python script
 
 Example of config.yml on config.yml.dist (Create the inputs/output directory manually)
+
+Install pip requirements by `pip install -r requirements.txt`
