@@ -10,7 +10,7 @@ for video in $DIR/inputs/*.*; do
     newFileName="$DIR/"$(basename $video)
     echo "Encoding to $newFileName"
     HandBrakeCLI -i "$video" -o "$newFileName" -q30 && mv "$video" $DIR/trash/
-    encodedCount=$encodedCount+1
+    encodedCount=(encodedCount+1)
 done
 
 if [ $encodedCount==0 ]; then
