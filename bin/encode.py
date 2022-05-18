@@ -17,19 +17,21 @@ encodedCount=0
 
 for inputsDir in inputsConfig:
     quality = inputsConfig[inputsDir]['quality'];
-    print(f"{inputsDir} target quality: {quality}")
-    for file in os.listdir(f"{directory}/{inputsDir}/"):
+    outputDir = f"{directory}/{inputsConfig[inputsDir]['output']}";
+    inputsDir = f"{directory}/{inputsDir}/";
+    print(f"{inputsDir} target quality: {quality} output dir: {outputDir}")
+    for file in os.listdir(inputsDir):
 
         if not re.search('\.(mp4|mov|mkv|m4v)$', file):
             continue
 
         print(f"Found file: {file}")
 
-        video = f"{directory}/inputs/{file}"
+        video = f"{inputsDir}/{file}"
 
         newBaseName = os.path.basename(video)
 
-        newFileName=f"{directory}/{newBaseName}"
+        newFileName=f"{outputDir}/{newBaseName}"
 
         print(f"Encoding to {newFileName}")
         
